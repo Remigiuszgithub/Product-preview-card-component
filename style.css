@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+ .attribution { 
+    background: white;
+    font-size: 14px;
+    display: flex; 
+    text-align: center;
+    width: 40%;
+    height: 450px;
+    border-radius: 10px;
+}
+.mobile {
+    display: none;
+}
+.desktop {
+    max-width: auto;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.text {
+    text-align: start; 
+    margin: 30px;
+}
+.text h1, h2, p {
+    padding-bottom: 20px;
+}
+.text h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background: hsl(158, 36%, 37%);
+    text-align: center;
+    padding: 15px 60px;
+    border: none;
+    cursor: pointer;
+}
+.button button:hover {
+    background: hsl(212, 21%, 14%);
+}
+.shop {
+    padding-right: 10px;
+}    
+.value {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.value h2 {
+    padding-right: 18px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+.value p {
+    text-decoration-line: line-through;
+    
+}
+.perfume {
+    letter-spacing: 3px;
+}
+@media (max-width: 1470px) {
+    .attribution {
+        width: 45%;
+    }
+}
+@media (max-width: 1300px) {
+    .attribution {
+        width: 50%;
+    }
+}
+@media (max-width: 1150px) {
+    .attribution {
+        width: 65%;
+    }
+}
+@media (max-width: 1000px) {
+    .attribution {
+        width: 70%;
+    }
+}
+@media (max-width: 850px) {
+    .attribution {
+        width: 85%;
+    }
+}
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .attribution {
+        flex-direction: column;
+        height: 90%;
+    }
+    .btn {
+        padding: 15px 90px;
+    }
+    .text h1, h2, p {
+        padding-bottom: 5px;
+    }
+    .text h1 br {
+        display: none;
+    }
+}
